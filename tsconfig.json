@@ -1,0 +1,41 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "path": ["node_modules/path-browserify"],
+      "fs": ["node_modules/browserify-fs"],
+      "crypto": ["node_modules/crypto-browserify"],
+      "stream": ["node_modules/stream-browserify"],
+      "util": ["node_modules/util"],
+      "url": ["node_modules/url"],
+      "@/*": ["src/*"],
+      "@app/*": ["src/app/*"],
+      "@module/*": ["src/app/modules/*"],
+      "@directive/*": ["src/app/directives/*"],
+      "@pipe/*": ["src/app/pipes/*"],
+      "@service/*": ["src/app/service/*"],
+      "@type/*": ["src/app/types/*"],
+      "@util/*": ["src/app/utils/*"]
+    },
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": ["es2018", "dom"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": true
+  }
+}
